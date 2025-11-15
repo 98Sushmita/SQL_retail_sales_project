@@ -77,7 +77,7 @@ FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
 
-2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022**:
+2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
 ```sql
 SELECT 
   *
@@ -85,7 +85,7 @@ FROM retail_sales
 SELECT *
 FROM retail_sales
 WHERE category ='Clothing' 
-		AND quantity >=4    --since we don't have quantity more than 10 so here i have checked more than equal to 4 
+		AND quantity >=4    
 		AND TO_CHAR(sale_date,'YYYY-MM') = '2022-11';
 ```
 
